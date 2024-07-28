@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บขายสินค้า Js Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Js Store</h1>
+        <div id="cart">
+            <span>จำนวน: </span>
+            <span id="cart-count">0</span> สินค้า
+            <button id="view-cart">รายการสินค้า</button>
+        </div>
+    </header>   
+    <main>
+        <div class="product" data-id="1" data-name="แอปเปิล" data-price="20" >
+            <img src="img/apple.jpg" alt="แอปเปิล">
+            <hr>
+            <h2>แอปเปิล</h2>
+            <p>ราคา: 20 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="2" data-name="กล้วย" data-price="10" >
+            <img src="img/banana.jpg" alt="กล้วย">
+            <hr>
+            <h2>กล้วย</h2>
+            <p>ราคา: 10 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="3" data-name="ไข่ไก่" data-price="299" >
+            <img src="img/chicken-eggs.jpg" alt="ไข่ไก่">
+            <hr>
+            <h2>ไข่ไก่</h2>
+            <p>ราคา: 299 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+
+        <!-- ใส่ไว้เฉยๆ -->
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+        <div class="product" data-id="0" data-name="ว่าง" data-price="9999999" >
+            <img src="img/tests.jpg" alt="ว่าง">
+            <hr>
+            <h2>ว่าง</h2>
+            <p>ราคา: 9999999 บาท</p>
+            <div class="quantity-control">
+                <button class="decrease">-</button>
+                <span class="quantity">1</span>
+                <button class="increase">+</button>
+            </div>
+            <button class="add-to-cart">เพิ่มไปยังรถเข็น</button>
+        </div>
+    </main>
+    <div id="cart-modal" style="display: none;">
+        <div id="cart-content">
+            <h2>รถเข็นสินค้า</h2>
+            <ul id="cart-items"></ul>
+            <p>ราคารวม: <span id="total-price">0</span> บาท</p>
+            <button id="close-cart">ปิด</button>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Js Store</p>  
+        <!-- By Weeraphap Makwong -->
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
